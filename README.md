@@ -25,7 +25,7 @@ The Platform will have:
 
 ### Proposed ER Models
 
-- By @akathecoder
+- By [@akathecoder](https://github.com/akathecoder)
 
 ![Proposed ER Model by @akathecoder](</ER%20Model/ER%20Model%20(Proposed%20-%20Sparsh).png>)
 
