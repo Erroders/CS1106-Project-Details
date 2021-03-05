@@ -6,6 +6,7 @@
   - [Description](#description)
   - [ER Model](#er-model)
     - [Proposed ER Models](#proposed-er-models)
+  - [Tech Stack](#tech-stack)
 
 ## Description
 
@@ -30,3 +31,12 @@ The Platform will have:
 ![Proposed ER Model by @akathecoder](</ER%20Model/ER%20Model%20(Proposed%20-%20Sparsh).png>)
 
 ---
+
+## Tech Stack
+
+| Technology        | Used for |
+| ----------------- | -------- |
+| ReactJS           | Frontend |
+| NodeJS, ExpressJS | Backend  |
+| MySQL             | Database |
+| AWS               | Hosting  |
