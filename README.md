@@ -6,6 +6,7 @@
   - [Description](#description)
   - [ER Model](#er-model)
     - [Proposed ER Models](#proposed-er-models)
+    - [Final ER Model](#final-er-model)
   - [Tech Stack](#tech-stack)
 
 ## Description
@@ -33,7 +34,10 @@ The Platform will have:
 - By [@rg12301](https://github.com/rg12301)
 
 ![Proposed ER Model by @rg12301](</ER%20Model/ER%20Model%20(Proposed%20-%20Raghav).png>)
----
+
+### Final ER Model
+
+![Final ER Model](/ER%20Model/ER%20Model%20-%20Final.png)
 
 ## Tech Stack
 
