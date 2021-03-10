@@ -34,9 +34,10 @@ The Platform will have:
 
 ## Tech Stack
 
-| Technology        | Used for |
-| ----------------- | -------- |
-| ReactJS           | Frontend |
-| NodeJS, ExpressJS | Backend  |
-| MySQL             | Database |
-| AWS               | Hosting  |
+| Technology        | Used for             |
+| ----------------- | -------------------- |
+| ReactJS           | Frontend             |
+| NodeJS, ExpressJS | Backend              |
+| MySQL             | Database             |
+| AWS               | Hosting              |
+| Algolia           | Search Functionality |
