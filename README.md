@@ -30,6 +30,9 @@ The Platform will have:
 
 ![Proposed ER Model by @akathecoder](</ER%20Model/ER%20Model%20(Proposed%20-%20Sparsh).png>)
 
+- By [@rg12301](https://github.com/rg12301)
+
+![Proposed ER Model by @rg12301](</ER%20Model/ER%20Model%20(Proposed%20-%20Raghav).png>)
 ---
 
 ## Tech Stack
