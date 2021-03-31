@@ -37,6 +37,10 @@ The Platform will have:
 
 ![Proposed ER Model by @rg12301](</ER%20Model/ER%20Model%20(Proposed%20-%20Raghav).png>)
 
+- By [@nonitmittal](https://github.com/nonitmittal)
+
+![Proposed ER Model by @nonitmittal](</ER%20Model/ER%20Model%20(Proposed%20-%20Nonit).png>)
+
 ### Final ER Model
 
 ![Final ER Model](/ER%20Model/ER%20Model%20-%20Final.png)
