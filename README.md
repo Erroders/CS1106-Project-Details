@@ -7,6 +7,8 @@
   - [ER Model](#er-model)
     - [Proposed ER Models](#proposed-er-models)
     - [Final ER Model](#final-er-model)
+  - [Relational Schema](#relational-schema)
+    - [Final Schema](#final-schema)
   - [Tech Stack](#tech-stack)
 
 ## Description
@@ -38,6 +40,12 @@ The Platform will have:
 ### Final ER Model
 
 ![Final ER Model](/ER%20Model/ER%20Model%20-%20Final.png)
+
+## Relational Schema
+
+### Final Schema
+
+![Final Relational Schema](/Relational%20Schema/Final%20Schema.png)
 
 ## Tech Stack
 
