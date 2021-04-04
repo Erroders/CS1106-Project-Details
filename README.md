@@ -10,11 +10,6 @@
   - [Relational Schema](#relational-schema)
     - [Final Schema](#final-schema)
   - [Tech Stack](#tech-stack)
-  - [SQL Queries](#sql-queries)
-    - [Table Creation (development@localhost)](#table-creation-developmentlocalhost)
-      - [User](#user)
-      - [Question](#question)
-      - [Answer](#answer)
 
 ## Description
 
@@ -65,65 +60,3 @@ The Platform will have:
 | MySQL             | Database             |
 | AWS               | Hosting              |
 | Algolia           | Search Functionality |
-
-## SQL Queries
-
-### Table Creation (development@localhost)
-
-#### User
-
-```sql
-CREATE TABLE `dbms_project`.`User` (
-    `User_ID` integer unsigned NOT NULL AUTO_INCREMENT,
-    `Username` varchar(45) NOT NULL,
-    `Password` char(64) NOT NULL,
-    `First_Name` varchar(45) NOT NULL,
-    `Middle_Name` varchar(45) NOT NULL,
-    `Last_Name` varchar(45) NOT NULL,
-    `Email` varchar(45) NOT NULL,
-    `Bio` text NULL,
-    `Batch` varchar(45) NOT NULL,
-    `Degree` varchar(45) NOT NULL,
-    `Field` varchar(45) NOT NULL,
-    `Roll_No` varchar(45) NOT NULL,
-    `DOB` date NOT NULL,
-    `Mobile_Number` varchar(11) NOT NULL,
-    PRIMARY KEY (`User_ID`)
-) AUTO_INCREMENT = 1;
-```
-
-#### Question
-
-```sql
-CREATE TABLE `dbms_project`.`Question` (
-    `Question_ID` integer unsigned NOT NULL AUTO_INCREMENT,
-    `DOC` date NOT NULL,
-    `Views` integer unsigned NOT NULL,
-    `Title` varchar(45) NOT NULL,
-    `Content` text NOT NULL,
-    `User_ID` integer unsigned NOT NULL,
-    PRIMARY KEY (`Question_ID`),
-    KEY `fkIdx_60` (`User_ID`),
-    CONSTRAINT `FK_59` FOREIGN KEY `fkIdx_60` (`User_ID`) REFERENCES `dbms_project`.`User` (`User_ID`)
-);
-```
-
-#### Answer
-
-```sql
-CREATE TABLE `dbms_project`.`Answer` (
-    `Answer_ID` integer NOT NULL,
-    `Answer_Body` text NOT NULL,
-    `Correct` char NULL,
-    `Upvotes` integer unsigned NOT NULL,
-    `Downvotes` integer unsigned NOT NULL,
-    `Question_ID` integer unsigned NOT NULL,
-    `DOC` date NOT NULL,
-    `User_ID` integer unsigned NOT NULL,
-    PRIMARY KEY (`Answer_ID`),
-    KEY `fkIdx_71` (`Question_ID`),
-    CONSTRAINT `FK_70` FOREIGN KEY `fkIdx_71` (`Question_ID`) REFERENCES `dbms_project`.`Question` (`Question_ID`),
-    KEY `fkIdx_75` (`User_ID`),
-    CONSTRAINT `FK_74` FOREIGN KEY `fkIdx_75` (`User_ID`) REFERENCES `dbms_project`.`User` (`User_ID`)
-);
-```
