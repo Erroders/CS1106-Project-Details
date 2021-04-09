@@ -10,6 +10,7 @@
   - [Relational Schema](#relational-schema)
     - [Final Schema](#final-schema)
   - [Tech Stack](#tech-stack)
+  - [MySQL](#mysql)
 
 ## Description
 
@@ -60,3 +61,8 @@ The Platform will have:
 | MySQL             | Database             |
 | AWS               | Hosting              |
 | Algolia           | Search Functionality |
+
+## MySQL
+
+- [Create New User](MySQL/MySQL_New_User.md)
+- [Queries on localhost](MySQL/localhost@akathecoder.md)
