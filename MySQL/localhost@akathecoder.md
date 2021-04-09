@@ -45,9 +45,9 @@ CREATE TABLE `dbms_project`.`Question` (
     `Title` varchar(45) NOT NULL,
     `Content` text NOT NULL,
     `User_ID` integer unsigned NOT NULL,
+    `slug` varchar(10) NOT NULL,
     PRIMARY KEY (`Question_ID`),
-    KEY `fkIdx_60` (`User_ID`),
-    CONSTRAINT `FK_59` FOREIGN KEY `fkIdx_60` (`User_ID`) REFERENCES `dbms_project`.`User` (`User_ID`)
+    FOREIGN KEY (`User_ID`) REFERENCES `dbms_project`.`User` (`User_ID`)
 );
 ```
 
@@ -64,10 +64,8 @@ CREATE TABLE `dbms_project`.`Answer` (
     `DOC` date NOT NULL,
     `User_ID` integer unsigned NOT NULL,
     PRIMARY KEY (`Answer_ID`),
-    KEY `fkIdx_71` (`Question_ID`),
-    CONSTRAINT `FK_70` FOREIGN KEY `fkIdx_71` (`Question_ID`) REFERENCES `dbms_project`.`Question` (`Question_ID`),
-    KEY `fkIdx_75` (`User_ID`),
-    CONSTRAINT `FK_74` FOREIGN KEY `fkIdx_75` (`User_ID`) REFERENCES `dbms_project`.`User` (`User_ID`)
+    FOREIGN KEY (`Question_ID`) REFERENCES `dbms_project`.`Question` (`Question_ID`),
+    FOREIGN KEY (`User_ID`) REFERENCES `dbms_project`.`User` (`User_ID`)
 );
 ```
 
