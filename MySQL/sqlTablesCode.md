@@ -55,7 +55,7 @@ CREATE TABLE `dbms_project`.`question` (
 
 ```sql
 CREATE TABLE `dbms_project`.`answer` (
-    `answerId` integer NOT NULL,
+    `answerId` integer unsigned NOT NULL AUTO_INCREMENT,
     `answerBody` text NOT NULL,
     `correct` char NULL,
     `upVotes` integer unsigned NOT NULL,
@@ -66,7 +66,7 @@ CREATE TABLE `dbms_project`.`answer` (
     PRIMARY KEY (`answerId`),
     FOREIGN KEY (`questionId`) REFERENCES `dbms_project`.`question` (`questionId`),
     FOREIGN KEY (`userId`) REFERENCES `dbms_project`.`user` (`userId`)
-);
+)AUTO_INCREMENT = 1;
 ```
 
 ### Insert Data
