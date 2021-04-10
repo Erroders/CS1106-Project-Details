@@ -65,4 +65,4 @@ The Platform will have:
 ## MySQL
 
 - [Create New User](MySQL/MySQL_New_User.md)
-- [Queries on localhost](MySQL/localhost@akathecoder.md)
+- [Create & Insert SQL queries](MySQL/sqlTablesCode.md)
