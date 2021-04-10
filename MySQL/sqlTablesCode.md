@@ -105,3 +105,108 @@ VALUES (
         '9876543210'
     );
 ```
+
+#### User 2
+
+```sql
+INSERT INTO user (
+        username,
+        password,
+        firstName,
+        middleName,
+        lastName,
+        email,
+        bio,
+        batch,
+        degree,
+        field,
+        rollNo,
+        dob,
+        mobileNumber
+    )
+VALUES (
+        'rg12301',
+        'password',
+        'Raghav',
+        '',
+        'Goyal',
+        'raghav@email.com',
+        'This is my Bio',
+        '2023',
+        'Btech',
+        'CSE',
+        '040',
+        DATE('2001/03/12'),
+        '6350234485'
+    );
+```
+
+#### User 3
+
+```sql
+INSERT INTO user (
+        username,
+        password,
+        firstName,
+        middleName,
+        lastName,
+        email,
+        bio,
+        batch,
+        degree,
+        field,
+        rollNo,
+        dob,
+        mobileNumber
+    )
+VALUES (
+        'nonit_m',
+        'password',
+        'Nonit',
+        '',
+        'Mittal',
+        'nonit@email.com',
+        'This is my Bio',
+        '2023',
+        'Btech',
+        'CSE',
+        '036',
+        DATE('2001/05/02'),
+        '9828656000'
+    );
+```
+
+#### User 4
+
+```sql
+INSERT INTO user (
+        username,
+        password,
+        firstName,
+        middleName,
+        lastName,
+        email,
+        bio,
+        batch,
+        degree,
+        field,
+        rollNo,
+        dob,
+        mobileNumber
+    )
+VALUES (
+        'vineet_ks',
+        'password',
+        'Vineet',
+        'Kumar',
+        'Sharma',
+        'vineetkumar@email.com',
+        'This is my Bio',
+        '2023',
+        'Btech',
+        'CSE',
+        '060',
+        DATE('2000/11/24'),
+        '7014311221'
+    );
+```
