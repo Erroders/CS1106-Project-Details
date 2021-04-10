@@ -2,6 +2,7 @@
 
 - [SQL Table Code](#sql-table-code)
   - [SQL Queries](#sql-queries)
+    - [Database Creation](#database-creation)
     - [Table Creation](#table-creation)
       - [User](#user)
       - [Question](#question)
@@ -20,6 +21,12 @@
       - [Answer 3](#answer-3)
 
 ## SQL Queries
+
+### Database Creation
+```sql
+CREATE DATABASE dbms_project;
+USE dbms_project;
+```
 
 ### Table Creation
 
