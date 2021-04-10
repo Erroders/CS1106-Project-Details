@@ -18,12 +18,12 @@
 ```sql
 CREATE TABLE `dbms_project`.`user` (
     `userId` integer unsigned NOT NULL AUTO_INCREMENT,
-    `username` varchar(45) NOT NULL,
+    `username` varchar(45) NOT NULL UNIQUE,
     `password` char(64) NOT NULL,
     `firstName` varchar(45) NOT NULL,
     `middleName` varchar(45) NOT NULL,
     `lastName` varchar(45) NOT NULL,
-    `email` varchar(45) NOT NULL,
+    `email` varchar(45) NOT NULL UNIQUE,
     `bio` text NULL,
     `batch` varchar(45) NOT NULL,
     `degree` varchar(45) NOT NULL,
@@ -45,10 +45,10 @@ CREATE TABLE `dbms_project`.`question` (
     `title` varchar(45) NOT NULL,
     `content` text NOT NULL,
     `userId` integer unsigned NOT NULL,
-    `slug` varchar(10) NOT NULL,
+    `slug` varchar(10) NOT NULL UNIQUE,
     PRIMARY KEY (`questionId`),
     FOREIGN KEY (`userId`) REFERENCES `dbms_project`.`user` (`userId`)
-);
+)AUTO_INCREMENT = 1;
 ```
 
 #### Answer
