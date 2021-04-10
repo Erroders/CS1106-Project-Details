@@ -8,6 +8,13 @@
       - [Answer](#answer)
     - [Insert Data](#insert-data)
       - [User 1](#user-1)
+      - [User 2](#user-2)
+      - [User 3](#user-3)
+      - [User 4](#user-4)
+      - [Question 1](#question-1)
+      - [Question 2](#question-2)
+      - [Question 3](#question-3)
+      - [Question 4](#question-4)
 
 ## SQL Queries
 
@@ -208,5 +215,89 @@ VALUES (
         '060',
         DATE('2000/11/24'),
         '7014311221'
+    );
+```
+
+#### Question 1
+
+```sql
+INSERT INTO question (
+        doc,
+        views,
+        title,
+        content,
+        userId,
+        slug
+    )
+VALUES (
+        DATE('2021/04/09'),
+        3,
+        'Tell me about yourself.',
+        'The interviewer here is testing your honesty while also identifying whether you’ve got what it takes. Link your strengths to concrete examples and choose weaknesses that you are working on improving. Always keep in mind to discuss attributes that will eventually qualify you for the job.',
+        2,
+        'tttttttttt'
+    );
+```
+
+#### Question 2
+
+```sql
+INSERT INTO question (
+        doc,
+        views,
+        title,
+        content,
+        userId,
+        slug
+    )
+VALUES (
+        DATE('2021/04/10'),
+        5,
+        'What are your strengths and weaknesses?',
+        'While interviewers would like to know more about you, they are not just making small talk. They are putting you on the spot by giving you full control of the situation and testing your reaction. ',
+        1,
+        'wertwysgh'
+    );
+```
+
+#### Question 3
+
+```sql
+INSERT INTO question (
+        doc,
+        views,
+        title,
+        content,
+        userId,
+        slug
+    )
+VALUES (
+        DATE('2021/04/10'),
+        2,
+        'Why are you leaving your current job?',
+        'Interviewers typically get hundreds of applications for the same job, and what they would like to know when asking this question is what sets you apart from the rest of the candidates. Chances are that you will not be aware of who the other candidates are so your best bet is to summarise your most impressive traits. The answer to this question can also be used for the question ‘Why do you want to work here?’ and ‘What interests you about this role?’',
+        1,
+        'ydhfjiplr'
+    );
+```
+
+#### Question 4
+
+```sql
+INSERT INTO question (
+        doc,
+        views,
+        title,
+        content,
+        userId,
+        slug
+    )
+VALUES (
+        DATE('2021/04/11'),
+        6,
+        'What is your biggest accomplishment?',
+        'The interviewer is looking for details to show that you can do the job. It’s an excellent opportunity to showcase your track record, and this information will also convey to your interviewer, what you would be capable of. The answer to this question can also be used for the question: ‘Tell me about a challenge or conflict you’ve faced at work, and how you’ve dealt with it?’.',
+        3,
+        'ertsjdlfy'
     );
 ```
