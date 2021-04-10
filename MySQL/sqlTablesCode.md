@@ -15,6 +15,9 @@
       - [Question 2](#question-2)
       - [Question 3](#question-3)
       - [Question 4](#question-4)
+      - [Answer 1](#answer-1)
+      - [Answer 2](#answer-2)
+      - [Answer 3](#answer-3)
 
 ## SQL Queries
 
@@ -299,5 +302,74 @@ VALUES (
         'The interviewer is looking for details to show that you can do the job. It’s an excellent opportunity to showcase your track record, and this information will also convey to your interviewer, what you would be capable of. The answer to this question can also be used for the question: ‘Tell me about a challenge or conflict you’ve faced at work, and how you’ve dealt with it?’.',
         3,
         'ertsjdlfy'
+    );
+```
+
+#### Answer 1
+
+```sql
+INSERT INTO answer (
+        answerBody,
+        correct,
+        upVotes,
+        downVotes,
+        questionId,
+        doc,
+        userId
+    )
+VALUES (
+        'When describing your strengths, always be accurate. Share your real strengths, not those you think the interviewer wants to hear. Be specific and choose strengths which are relevant and based on the job role requirements. Avoid choosing vague words such as “people skills,” instead say “persuasive communication” or “relationship building.”',
+        'I',
+        2,
+        1,
+        2,
+        DATE('2021/04/13'),
+        4
+    );
+```
+
+#### Answer 2
+
+```sql
+INSERT INTO answer (
+        answerBody,
+        correct,
+        upVotes,
+        downVotes,
+        questionId,
+        doc,
+        userId
+    )
+VALUES (
+        'One helpful way to answer this question is by using the STAR method. Set the context for your story (Situation), explain what was required of you (Task), what you did to achieve the objectives (Activity) and the success of it all (Result).',
+        'C',
+        12,
+        5,
+        4,
+        DATE('2021/05/01'),
+        2
+    );
+```
+
+#### Answer 3
+
+```sql
+INSERT INTO answer (
+        answerBody,
+        correct,
+        upVotes,
+        downVotes,
+        questionId,
+        doc,
+        userId
+    )
+VALUES (
+        'When describing your strengths, always be accurate. Share your real strengths, not those you think the interviewer wants to hear. Be specific and choose strengths which are relevant and based on the job role requirements. Avoid choosing vague words such as “people skills,” instead say “persuasive communication” or “relationship building”.',
+        '',
+        9,
+        11,
+        2,
+        DATE('2021/04/26'),
+        3
     );
 ```
