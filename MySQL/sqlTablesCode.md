@@ -57,7 +57,7 @@ CREATE TABLE `dbms_project`.`user` (
 ```sql
 CREATE TABLE `dbms_project`.`question` (
     `questionId` integer unsigned NOT NULL AUTO_INCREMENT,
-    `doc` date NOT NULL,
+    `doc` datetime NOT NULL,
     `views` integer unsigned NOT NULL,
     `title` varchar(45) NOT NULL,
     `content` text NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE `dbms_project`.`question` (
     `slug` varchar(10) NOT NULL UNIQUE,
     PRIMARY KEY (`questionId`),
     FOREIGN KEY (`userId`) REFERENCES `dbms_project`.`user` (`userId`)
-)AUTO_INCREMENT = 1;
+) AUTO_INCREMENT = 1;
 ```
 
 #### Answer
@@ -78,7 +78,7 @@ CREATE TABLE `dbms_project`.`answer` (
     `upVotes` integer unsigned NOT NULL,
     `downVotes` integer unsigned NOT NULL,
     `questionId` integer unsigned NOT NULL,
-    `doc` date NOT NULL,
+    `doc` datetime NOT NULL,
     `userId` integer unsigned NOT NULL,
     PRIMARY KEY (`answerId`),
     FOREIGN KEY (`questionId`) REFERENCES `dbms_project`.`question` (`questionId`),
@@ -240,7 +240,7 @@ INSERT INTO question (
         slug
     )
 VALUES (
-        DATE('2021/04/09'),
+        '2021-04-09 06:32:12',
         3,
         'Tell me about yourself.',
         'The interviewer here is testing your honesty while also identifying whether you’ve got what it takes. Link your strengths to concrete examples and choose weaknesses that you are working on improving. Always keep in mind to discuss attributes that will eventually qualify you for the job.',
@@ -261,7 +261,7 @@ INSERT INTO question (
         slug
     )
 VALUES (
-        DATE('2021/04/10'),
+        '2021/04/10 17:53:55',
         5,
         'What are your strengths and weaknesses?',
         'While interviewers would like to know more about you, they are not just making small talk. They are putting you on the spot by giving you full control of the situation and testing your reaction. ',
@@ -282,7 +282,7 @@ INSERT INTO question (
         slug
     )
 VALUES (
-        DATE('2021/04/10'),
+        '2021/04/10 11:10:09',
         2,
         'Why are you leaving your current job?',
         'Interviewers typically get hundreds of applications for the same job, and what they would like to know when asking this question is what sets you apart from the rest of the candidates. Chances are that you will not be aware of who the other candidates are so your best bet is to summarise your most impressive traits. The answer to this question can also be used for the question ‘Why do you want to work here?’ and ‘What interests you about this role?’',
@@ -303,7 +303,7 @@ INSERT INTO question (
         slug
     )
 VALUES (
-        DATE('2021/04/11'),
+        '2021/04/11 01:45:12',
         6,
         'What is your biggest accomplishment?',
         'The interviewer is looking for details to show that you can do the job. It’s an excellent opportunity to showcase your track record, and this information will also convey to your interviewer, what you would be capable of. The answer to this question can also be used for the question: ‘Tell me about a challenge or conflict you’ve faced at work, and how you’ve dealt with it?’.',
@@ -330,7 +330,7 @@ VALUES (
         2,
         1,
         2,
-        DATE('2021/04/13'),
+        '2021/04/13 11:54:09',
         4
     );
 ```
@@ -353,7 +353,7 @@ VALUES (
         12,
         5,
         4,
-        DATE('2021/05/01'),
+        '2021/05/01 23:14:52',
         2
     );
 ```
@@ -376,7 +376,7 @@ VALUES (
         9,
         11,
         2,
-        DATE('2021/04/26'),
+        '2021/04/26 00:02:25',
         3
     );
 ```
