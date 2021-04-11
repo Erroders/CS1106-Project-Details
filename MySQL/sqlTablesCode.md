@@ -24,6 +24,7 @@
 
 ### Database Creation
 ```sql
+DROP DATABASE dbms_project;
 CREATE DATABASE dbms_project;
 USE dbms_project;
 ```
