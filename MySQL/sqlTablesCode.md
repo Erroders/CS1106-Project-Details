@@ -62,7 +62,7 @@ CREATE TABLE `dbms_project`.`question` (
     `title` varchar(45) NOT NULL,
     `content` text NOT NULL,
     `username` varchar(45) NOT NULL,
-    `slug` varchar(10) NOT NULL UNIQUE,
+    `slug` varchar(200) NOT NULL UNIQUE,
     PRIMARY KEY (`questionId`),
     FOREIGN KEY (`username`) REFERENCES `dbms_project`.`user` (`username`)
 ) AUTO_INCREMENT = 1;
