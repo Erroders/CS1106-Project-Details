@@ -48,6 +48,7 @@ CREATE TABLE `dbms_project`.`user` (
     `rollNo` varchar(45) NOT NULL,
     `dob` date NULL,
     `mobileNumber` varchar(11) NULL,
+    `isValid` boolean DEFAULT FALSE,
     PRIMARY KEY (`username`)
 );
 ```
@@ -63,6 +64,7 @@ CREATE TABLE `dbms_project`.`question` (
     `content` text NOT NULL,
     `username` varchar(45) NOT NULL,
     `slug` varchar(200) NOT NULL UNIQUE,
+    `tags` varchar(100) NULL,
     PRIMARY KEY (`questionId`),
     FOREIGN KEY (`username`) REFERENCES `dbms_project`.`user` (`username`)
 ) AUTO_INCREMENT = 1;
